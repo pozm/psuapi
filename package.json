@@ -1,0 +1,27 @@
+{
+  "name": "psuobf",
+  "version": "1.0.0",
+  "description": "Interact with the psu buyer api through js.",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TesDevelopment/psuapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TesDevelopment/psuapi/issues"
+  },
+  "homepage": "https://github.com/TesDevelopment/psuapi#readme",
+  "devDependencies": {},
+  "keywords": [
+    "psu"
+  ]
+}
