@@ -1,2 +1,2 @@
-# PSU OBF
- Interact with the psu buyer api with node
+## PSU API
+Made to interact with the psu buyer api.
