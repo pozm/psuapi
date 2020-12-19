@@ -2,4 +2,4 @@
 Made to interact with the psu buyer api.
 
 # Documentatuion:
-https://j0sh.gitbook.io/psu-api/web-api/checkkey
+https://j0sh.gitbook.io/psu-api/
