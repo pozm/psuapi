@@ -44,7 +44,24 @@ async function obfuscate(key,script,options){
             'Content-Type': 'application/json'
         }
     })
-    return await a.text();
+    let info = {
+        "script": await a.text(),
+        "reqsleft": a.headers.get('KeyUsed'),
+        "keyused": a.headers.get('ReqsLeft'),
+    }
+    return info;
 }
 
-module.exports.obfuscate = obfuscate;
+async function checkkey(key){
+    let a = await fetch('http://api.psu.dev:8080/checkkey',{
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'key': key
+        }
+    })
+    let a_json = await a.json();
+    return a_json
+}
+
+module.exports = {obfuscate,checkkey};
