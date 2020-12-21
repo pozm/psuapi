@@ -5,17 +5,17 @@ async function obfuscate(key, script, options){
         "key": key,
         "script": script,
         "options": {
-            "DisableSuperOperators": options.DisableSuperOperators || false,
-            "MaximumSecurityEnabled": options.MaximumSecurityEnabled || false,
-            "ControlFlowObfuscation": options.ControlFlowObfuscation || true,
-            "ConstantEncryption": options.ConstantEncryption || false,
-            "EncryptAllStrings": options.EncryptAllStrings || false,
-            "DisableAllMacros": options.DisableAllMacros || false,
-            "EnhancedOutput": options.EnhancedOutput || false,
-            "EnhancedConstantEncryption": options.EnhancedConstantEncryption || false,
-            "CompressedOutput": options.CompressedOutput || false,
-            "PremiumFormat": options.PremiumFormat || false,
-            "ByteCodeMode": options.ByteCodeMode || "Default"
+            "DisableSuperOperators": options.DisableSuperOperators ?? false,
+            "MaximumSecurityEnabled": options.MaximumSecurityEnabled ?? false,
+            "ControlFlowObfuscation": options.ControlFlowObfuscation ?? true,
+            "ConstantEncryption": options.ConstantEncryption ?? false,
+            "EncryptAllStrings": options.EncryptAllStrings ?? false,
+            "DisableAllMacros": options.DisableAllMacros ?? false,
+            "EnhancedOutput": options.EnhancedOutput ?? false,
+            "EnhancedConstantEncryption": options.EnhancedConstantEncryption ?? false,
+            "CompressedOutput": options.CompressedOutput ?? false,
+            "PremiumFormat": options.PremiumFormat ?? false,
+            "ByteCodeMode": options.ByteCodeMode ?? "Default"
         }
     }
 
